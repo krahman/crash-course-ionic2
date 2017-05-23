@@ -46,6 +46,7 @@ export class HomePage {
   }
 
   pushPage(user) {
-    this.modalCtrl.create(DetailPage, user).present();
+    // this.modalCtrl.create(DetailPage, user).present();
+    this.navCtrl.push(DetailPage, user);
   }
 }
