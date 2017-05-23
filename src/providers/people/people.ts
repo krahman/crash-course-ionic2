@@ -16,7 +16,7 @@ export class PeopleProvider {
   }
 
   getPeople() {
-    return this.http.get('https://randomuser.me/api/?results=3')
+    return this.http.get('https://randomuser.me/api/?results=10')
       .map(res => res.json());
   }
 
